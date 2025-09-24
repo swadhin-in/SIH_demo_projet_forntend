@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Recreation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="logo">
+                <span class="logo-text">Welcome!</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-item active"><a href="#"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-user-friends"></i> Attendance</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-book-open"></i> Courses</a></li>
+                    <li class="nav-item current"><a href="#"><i class="fas fa-calendar-alt"></i> Pregrett</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-wallet"></i> Wallet</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-wallet"></i> Wallet</a></li>
+                    <li class="nav-item"><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-navbar">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="nav-icons">
+                    <i class="fas fa-question-circle"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-envelope"></i>
+                    <img src="#" alt="User Avatar" class="user-avatar">
+                </div>
+            </header>
+
+            <section class="dashboard-overview">
+                <h1>Dashboard</h1>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Attendance ></h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="large-text">102/160</p>
+                            <p class="percentage">70%</p>
+                            <button class="report-button">Report Issue</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Assignments</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="large-text">15/20</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                            <button class="view-all-button">View All</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Assignments</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="large-text">Overall</p>
+                            <p class="rating">4.5/5</p>
+                            <button class="view-all-button">View All</button>
+                        </div>
+                    </div>
+                    <div class="card wallet-card">
+                        <div class="card-header">
+                            <h3>Wallet Balance</h3>
+                        </div>
+                        <div class="card-content">
+                            <p class="wallet-amount">$ 500.00</p>
+                            <button class="top-up-button">Top-up</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secondary-info">
+                <div class="attendance-by-course">
+                    <h2>Attendance by Course</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Progress</th>
+                                <th>Attendance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CD</td>
+                                <td>20/25</td>
+                                <td>18/20 (90%)</td>
+                            </tr>
+                            <tr>
+                                <td>ESE</td>
+                                <td>35/50</td>
+                                <td>30/40 (75%)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="upcoming-deadlines">
+                    <h2>Upcoming Deadlines</h2>
+                    <ul>
+                        <li>CA1 Submission - Due: Sep. 12</li>
+                        <li>Research Paper Outline</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="tasks">
+                <h2>Tasks</h2>
+                <div class="task-list">
+                    <div class="task-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">7-day Attendance</label>
+                        <span class="task-reward">+50</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">CA1 submission</label>
+                        <span class="task-reward">+50</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
